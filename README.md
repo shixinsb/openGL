@@ -1,2 +1,0 @@
-# openGL
-openGL beginner
