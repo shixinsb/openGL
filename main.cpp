@@ -52,7 +52,7 @@ int main() {
 	/* key function */
 	glfwSetKeyCallback(window, key_callback);
 
-	Shader ourShader("default.vs", "default.frag");
+	Shader ourShader("shader/default.vs", "shader/default.frag");
 
 	/* first triangle */
 	GLfloat vertices[] = { 0.5f, 0.5f, 0.0f, // Top Right
