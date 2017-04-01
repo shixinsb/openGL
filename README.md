@@ -1,7 +1,7 @@
 # openGL
-###openGL beginner
-###this is my own practice of openGL.
-###The tutorial is on https://learnopengl.com/.
+    openGL beginner
+    this is my own practice of openGL.
+    The tutorial is on [点击这里你可以链接到www.google.com](http://www.google.com)<br />https://learnopengl.com/.
 # dependencies
   . GLFW 
   . GLEW
