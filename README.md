@@ -1,7 +1,7 @@
 # openGL
     openGL beginner
     this is my own practice of openGL.
-    The tutorial is on
+    The tutorial is
 [learnopengl](https://learnopengl.com/ )
 # dependencies
   * GLFW 
