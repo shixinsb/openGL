@@ -1,3 +1,4 @@
+[summary](https://www.dropbox.com/s/fogb8huysbt53vp/openGL.pdf?dl=0)
 # [openGL](https://www.opengl.org/)
 this is beginner practice of openGL. The tutorial is on
 [learnopengl](https://learnopengl.com/ )
