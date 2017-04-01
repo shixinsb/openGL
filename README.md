@@ -1,11 +1,11 @@
 # openGL
     openGL beginner
     this is my own practice of openGL.
-    The tutorial is on [点击这里你可以链接到www.google.com](http://www.google.com)<br />https://learnopengl.com/.
+    The tutorial is on https://learnopengl.com/.
 # dependencies
-  . GLFW 
-  . GLEW
-  . SOIL
+  * GLFW 
+  * GLEW
+  * SOIL
 # GLFW http://www.glfw.org/download.html 
   Static library to create an OpenGL context, define window parameters and handle user input. 
   Retrieving, building and linking the GLFW library.
