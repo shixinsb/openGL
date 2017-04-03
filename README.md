@@ -29,3 +29,10 @@ an image-loading library that supports several popular formats and does all the 
      $ sudo make install
 
 
+### [GLM]( http://glm.g-truc.net/0.9.5/index.html)
+GLM stands for OpenGL Mathematics and is a header-only library. It contains some useful linear algebra operations.
+
+      $ cmake-gui
+      // change to global lib
+      $ cmake ..
+      $ sudo cmake install
