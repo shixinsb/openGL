@@ -6,7 +6,7 @@ this is beginner practice of openGL. The tutorial is on
   * GLFW 
   * GLEW
   * SOIL
-
+  * GLM
 ### [GLFW]( http://www.glfw.org/download.html )
 Static library to create an OpenGL context, define window parameters and handle user input. Retrieving, building and linking the GLFW library.
 
