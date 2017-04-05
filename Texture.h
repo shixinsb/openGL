@@ -21,7 +21,6 @@ public:
 		if (image == 0) {
 			std::cerr << "ERROR::TEXTURE::SOIL::IMAGE_PATH_NOT_FOUND"
 					<< std::endl;
-
 		}
 		glGenTextures(1, &this->texture);
 		glBindTexture(GL_TEXTURE_2D, this->texture);

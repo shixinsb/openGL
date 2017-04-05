@@ -13,7 +13,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-
+#include "ObjLoader.h"
 /* prep function*/
 GLFWwindow* initWindow();
 GLfloat* initVertices();
@@ -92,6 +92,10 @@ int main() {
 //			-0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, // Bottom Left
 //			-0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f // Top Left
 //			};
+
+	/* ObjLoader */
+	ObjLoader objLoader("obj/sphere.obj");
+	std::cout<<objLoader.getNumberOfTriangle()<<std::endl;
 	glm::vec3 cubePositions[] = { glm::vec3(0.0f, 0.0f, 0.0f), //
 	glm::vec3(2.0f, 5.0f, -15.0f), //
 	glm::vec3(-1.5f, -2.2f, -2.5f), //
