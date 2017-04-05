@@ -17,7 +17,7 @@
 class ObjLoader {
 private:
 	std::vector<GLfloat> points;
-	std::vector<GLuint> indexes;
+	std::vector<GLuint> indices;
 	GLuint pointNum;
 	GLuint triangleNum;
 public:
@@ -61,14 +61,14 @@ public:
 				std::string s;
 				double a[3];
 				lines >> s >> a[0] >> a[1] >> a[2];
-				indexes.push_back(a[0]);
-				indexes.push_back(a[1]);
-				indexes.push_back(a[2]);
+				indices.push_back(a[0]-1);
+				indices.push_back(a[1]-1);
+				indices.push_back(a[2]-1);
 			}
 			// close file handlers
 			objFile.close();
 		} catch (std::ifstream::failure e) {
-			std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ"
+			std::cout << "ERROR::OBJLOADER::FILE_NOT_SUCCESFULLY_READ"
 					<< std::endl;
 		}
 	}
@@ -81,10 +81,18 @@ public:
 		return vert;
 	}
 
-	GLuint* getIndexes() {
-			GLuint *index = &this->indexes[0];
+	GLuint* getIndices() {
+			GLuint *index = &this->indices[0];
 			return index;
 		}
+	GLuint getNumberOfPoints(){
+		return this->pointNum;
+	}
+	void info(){
+		std::cout<<"total points    = "<<this->getNumberOfPoints()<<std::endl;
+		std::cout<<"total triangle  = "<<this->getNumberOfTriangle()<<std::endl;
+		std::cout<<"length of index = "<<this->getNumberOfTriangle()*3<<std::endl;
+	}
 };
 
 #endif /* OBJLOADER_H_ */
